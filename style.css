@@ -3,16 +3,16 @@
 
 :root {
     --primary-color: #007bff;
-    --light-gray: #f8f9fa;
-    --dark-gray: #343a40;
+    --light-gray: #343a40; /* Now dark for background */
+    --dark-gray: #f8f9fa; /* Now light for text */
     --mid-gray: #495057;
     --border-color: #dee2e6;
 }
 
 body {
     font-family: 'Noto Sans KR', sans-serif;
-    background-color: var(--light-gray);
-    color: var(--dark-gray);
+    background-color: black;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,12 +25,13 @@ body {
 .container {
     width: 100%;
     max-width: 600px;
-    background-color: #ffffff;
+    background-color: #333333;
     border-radius: 20px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
     padding: 40px;
     text-align: center;
     transition: all 0.3s ease;
+    color: white;
 }
 
 /* Screens */
@@ -62,7 +63,7 @@ h2 {
 p {
     font-size: 1rem;
     line-height: 1.75;
-    color: var(--mid-gray);
+    color: white;
     margin-bottom: 1rem;
 }
 
@@ -133,7 +134,7 @@ p {
 
 .page-number {
     font-size: 1rem;
-    color: #868e96;
+    color: lightgray;
     margin-bottom: 25px;
     font-weight: 500;
 }
@@ -177,7 +178,7 @@ p {
 .result-section h3 {
     font-size: 1.2rem;
     font-weight: 700;
-    border-bottom: 2px solid #f1f3f5;
+    border-bottom: 2px solid #666;
     padding-bottom: 10px;
     margin-bottom: 15px;
 }

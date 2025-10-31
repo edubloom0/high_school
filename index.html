@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고등학교 추천 설문지</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Start Screen -->
+        <div id="start-screen">
+            <h1>고등학교 추천 설문지</h1>
+            <p class="intro-text">본 설문은 몇 가지 질문을 통해 여러분의 성향과 목표에 맞는 최적의 고등학교를 추천하기 위해 만들어졌습니다. <br>각 질문에 솔직하게 답변해주세요.</p>
+            <button id="start-btn" class="btn">시작하기</button>
+        </div>
+
+        <!-- Question Screen -->
+        <div id="question-screen" class="hidden">
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+            <div class="page-number" id="page-number"></div>
+            <h2 class="question-text" id="question-text"></h2>
+            <div id="answer-buttons"></div>
+            <button id="next-btn" class="btn hidden">다음</button>
+        </div>
+
+        <!-- Result Screen -->
+        <div id="result-screen" class="hidden">
+            <h1>고등학교 추천 순위</h1>
+            <div id="result-list"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
